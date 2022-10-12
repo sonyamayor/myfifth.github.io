@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бобух Олег 27/2</title>
+</head>
+<body>
+    <form name="form" action="URL_отправки_данных" method="POST">
+        <fieldset>
+            <h2>Калькулятор стоимости заказа</h2>
+            <label>Количество (штук):<br><input type="text" id="kol" placeholder="0" oninput="this.value = this.value.replace(/[^0-9]/g, '')"><br></label>
+            <label>Стоимость (в рублях):<br><input type="text" id="ed" placeholder="0" oninput="this.value = this.value.replace(/[^0-9]/g, '')"><br></label>
+            <input type="button" id="button" value="Итог" onClick="sum();">
+        </fieldset>
+    </form>
+    <br>Итог:<div id="result"></div>
+    <script src="jscript.js" defer></script>
+</body>
+</html>
